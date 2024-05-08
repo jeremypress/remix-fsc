@@ -1,36 +1,11 @@
-# Welcome to Remix + Vite!
+# Remix FSC
 
-📖 See the [Remix docs](https://remix.run/docs) and the [Remix Vite docs](https://remix.run/docs/en/main/guides/vite) for details on supported features.
+An attempt to implement a [full stack component](https://www.epicweb.dev/full-stack-components) in the latest version of remix
 
-## Development
+The index route imports User, which defines a loader and a non default exported component. However, the user loader never fires.
+you can visit localhost:5173/user to see the user json successfully returned.
 
-Run the Vite dev server:
+# To run
 
-```shellscript
-npm run dev
-```
-
-## Deployment
-
-First, build your app for production:
-
-```sh
-npm run build
-```
-
-Then run the app in production mode:
-
-```sh
-npm start
-```
-
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-- `build/server`
-- `build/client`
+`npm install`
+`npm  run dev`

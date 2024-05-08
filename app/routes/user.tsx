@@ -1,6 +1,8 @@
 import { json, LoaderFunction } from "@remix-run/node";
 
 export const loader: LoaderFunction = async () => {
+  console.log("firing from the user loader");
+
   return json({ userMessage: "This is some JSON data from the user" });
 };
 
